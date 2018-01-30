@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FontAwesomeIconView glyphName="MAP" layoutX="29.0" layoutY="53.0" size="36" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Label layoutX="74.0" layoutY="28.0" prefHeight="26.0" prefWidth="170.0" text="IᑎᑎᒪOGI᙭" textOverrun="WORD_ELLIPSIS" />
+      <JFXTextField layoutX="346.0" layoutY="145.0" promptText="username" />
+      <JFXPasswordField layoutX="346.0" layoutY="217.0" promptText="password" />
+      <JFXButton layoutX="373.0" layoutY="309.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="114.0" text="Login" />
+      <JFXCheckBox layoutX="346.0" layoutY="265.0" mnemonicParsing="false" text="Remember me" />
+   </children>
+</AnchorPane>
