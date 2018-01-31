@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Purpose of the SRS}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Abstract}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Why use InnLogix?}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Overview}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Overall Description}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Product Functions}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{User Characteristics}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Product Perspective}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Constraints}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.5}{Assumption and Dependencies}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Specific Requirements}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Software Interfaces}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Hardware Interfaces}{chapter.3}% 14
+\BOOKMARK [0][-]{chapter.4}{Functional Requiements-System Features}{}% 15
+\BOOKMARK [1][-]{section.4.1}{Login}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.2}{Administration Dashboard}{chapter.4}% 17
+\BOOKMARK [2][-]{subsection.4.2.1}{Admin Section}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.2}{Front Office}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.3}{Housekeeping}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.4}{Kitchen/Restaurant}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.5}{Spa/Gym}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.6}{Bookings}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.7}{Banquet Hall}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.8}{Inventory Management}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.9}{Accounts Panel}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{Guest Dashboard}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.3.1}{Requests}{section.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.3.2}{Housekeeping}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.3}{Room Service}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.4}{Complaints}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.5}{Billings}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.6}{Services}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.7}{WiFi Usage}{section.4.3}% 34
+\BOOKMARK [0][-]{chapter.5}{Nonfunctional Requirements}{}% 35
+\BOOKMARK [1][-]{section.5.1}{Performance Requirements}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.2}{Security Requirements}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.3}{Safety Requirements}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.4}{Capacity Requirements}{chapter.5}% 39
