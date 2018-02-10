@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
    <children>
       <ImageView fitHeight="394.0" fitWidth="691.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" smooth="false">
          <image>
@@ -33,11 +33,11 @@
          <font>
             <Font size="25.0" />
          </font></Label>
-      <JFXTextField labelFloat="true" layoutX="346.0" layoutY="139.0" prefWidth="155.0" promptText="username" style="-fx-text-fill: #1dcdc1;" unFocusColor="#1dcdc1">
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="346.0" layoutY="139.0" prefWidth="155.0" promptText="username" style="-fx-text-fill: #1dcdc1;" unFocusColor="#1dcdc1">
          <font>
             <Font size="16.0" />
          </font></JFXTextField>
-      <JFXPasswordField labelFloat="true" layoutX="346.0" layoutY="213.0" prefHeight="32.0" prefWidth="155.0" promptText="password" style="-fx-text-fill: #1dcdc1;" unFocusColor="#1dcdc1">
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="346.0" layoutY="213.0" prefHeight="32.0" prefWidth="155.0" promptText="password" style="-fx-text-fill: #1dcdc1;" unFocusColor="#1dcdc1">
          <font>
             <Font size="16.0" />
          </font></JFXPasswordField>
@@ -45,7 +45,7 @@
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></JFXCheckBox>
-      <JFXButton buttonType="RAISED" cancelButton="true" defaultButton="true" layoutX="379.0" layoutY="313.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" ripplerFill="#bf9797" style="-fx-background-color: #1dcdc1;" text="LOGIN">
+      <JFXButton fx:id="loginButton" buttonType="RAISED" cancelButton="true" defaultButton="true" layoutX="379.0" layoutY="313.0" mnemonicParsing="false" onAction="#loginButtonMethod" prefHeight="26.0" prefWidth="89.0" ripplerFill="#bf9797" style="-fx-background-color: #1dcdc1;" text="LOGIN">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></JFXButton>
@@ -53,10 +53,20 @@
       <FontAwesomeIconView fill="#4ecdb5" glyphName="LOCK" layoutX="290.0" layoutY="242.0" size="36" strokeType="OUTSIDE" strokeWidth="0.0" />
       <FontAwesomeIconView fill="#4ecdb5" glyphName="CHEVRON_CIRCLE_RIGHT" layoutX="331.0" layoutY="339.0" size="36" strokeType="OUTSIDE" strokeWidth="0.0" />
       <JFXTogglePane layoutX="47.0" layoutY="115.0" prefHeight="150.0" prefWidth="200.0" />
-      <JFXComboBox labelFloat="true" layoutX="275.0" layoutY="58.0" prefHeight="48.0" prefWidth="228.0" promptText="Admin/Guest" visibleRowCount="2">
+      <JFXComboBox fx:id="user" labelFloat="true" layoutX="275.0" layoutY="58.0" prefHeight="48.0" prefWidth="228.0" promptText="Admin/Guest" unFocusColor="#eee0e0" visibleRowCount="2">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </JFXComboBox>
+      <Label fx:id="isConnected" layoutX="511.0" layoutY="33.0" prefHeight="21.0" prefWidth="170.0" textFill="#e8dbdb">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrongCreds" layoutX="510.0" layoutY="235.0" prefHeight="21.0" prefWidth="170.0" textFill="#e8dbdb">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
