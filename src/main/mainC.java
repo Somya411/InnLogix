@@ -15,9 +15,9 @@ public class mainC extends Application
         Parent root = FXMLLoader.load(getClass().getResource("/login/login.fxml"));
 
         Scene scene = new Scene(root);
-
         stage.setScene(scene);
         stage.setTitle("InnLogix Login");
+        stage.setResizable(false);
         stage.show();
 
     }
