@@ -1,30 +1,29 @@
 package login;
 
-import database.SQLiteConn;
+import database.dbUtil;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LoginModel {
-    Connection connection;
 
+    private boolean f = false;
     public LoginModel()
     {
+
         try
         {
-            this.connection = SQLiteConn.getConnection();
-
+            f =  dbUtil.dbConnect();
+            System.out.println(f);
         }
         catch (SQLException e)
         {
             Logger.getLogger(LoginModel.class.getName()).log(Level.SEVERE, null, e);
         }
 
-        if(this.connection == null)
+        if(!f)
         {
             System.exit(1);// finalize?
         }
@@ -33,43 +32,24 @@ public class LoginModel {
 
     public boolean isDbConnected()
     {
-        return this.connection != null;
+        return f;
     }
 
-    public boolean isLogin(String user, String pass, String type) throws SQLException
+    public boolean isLogin(User user) throws SQLException
     {
-        PreparedStatement preparedStatement = null;
-        ResultSet resultSet = null;
-        String query = "SELECT * FROM login WHERE username = ? and type = ? and password = ?";
+        String selectStmt = "SELECT * FROM login WHERE username = '" + user.getUsername() +"' and type = '" + user.getType() +"' and password = '"+ user.getPassword() + "'";
         try
         {
-            preparedStatement = this.connection.prepareStatement(query);
-            preparedStatement.setString(1, user);
-            preparedStatement.setString(2, type);
-            preparedStatement.setString(3, pass);
-
-            resultSet = preparedStatement.executeQuery();
-            boolean f = resultSet.next();
-            System.out.println("In isLogin : " + f);
-            return f;
-
-
+            ResultSet rsLogin = dbUtil.dbExecuteQuery(selectStmt);
+            boolean f2 = rsLogin.next();
+            System.out.println("In isLogin : " + f2);
+            return f2;
         }
-        catch (SQLException e)
+        catch (SQLException | ClassNotFoundException e)
         {
             return false;
         }
-        finally
-        {
-            if (preparedStatement != null)
-            {
-                preparedStatement.close();
-            }
-            if (resultSet != null)
-            {
-                resultSet.close();
-            }
-        }
+
     }
 
 

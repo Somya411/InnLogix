@@ -7,7 +7,6 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
-import javafx.collections.FXCollections;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
@@ -26,7 +25,7 @@ public class LoginController implements Initializable{
     @FXML
     private Label isConnected;
     @FXML
-    private JFXComboBox<String> user;
+    private JFXComboBox<String> type;
     @FXML
     private JFXTextField username;
     @FXML
@@ -49,27 +48,28 @@ public class LoginController implements Initializable{
         }
 //        this.userType.setItems(FXCollections.observableArrayList(user.values()));
 
-        user.getItems().add("admin"); //Change Selection colour
-        user.getItems().add("guest");
+        type.getItems().add("admin"); //Change Selection colour
+        type.getItems().add("guest");
     }
 
 
     @FXML
     private void loginButtonMethod(ActionEvent event)
     {
+        User user = new User(username.getText(), type.getValue(), password.getText());
         System.out.println(this.username.getText());  //TODO Remove Trailing spaces
         System.out.println(this.password.getText());
-        System.out.println(this.user.getValue());
+        System.out.println(this.type.getValue());
         try
         {
-            boolean temp = loginModel.isLogin(username.getText(), password.getText(), user.getValue());
+            boolean temp = loginModel.isLogin(user);
             System.out.println(temp);
             if (temp)
             {
                 Stage stage = (Stage)this.loginButton.getScene().getWindow();
                 stage.close();
 
-                switch (this.user.getValue())
+                switch (user.getType())
                 {
                     case "admin":
                         adminLogin();

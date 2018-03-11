@@ -53,7 +53,7 @@
       <FontAwesomeIconView fill="#4ecdb5" glyphName="LOCK" layoutX="290.0" layoutY="242.0" size="36" strokeType="OUTSIDE" strokeWidth="0.0" />
       <FontAwesomeIconView fill="#4ecdb5" glyphName="CHEVRON_CIRCLE_RIGHT" layoutX="331.0" layoutY="339.0" size="36" strokeType="OUTSIDE" strokeWidth="0.0" />
       <JFXTogglePane layoutX="47.0" layoutY="115.0" prefHeight="150.0" prefWidth="200.0" />
-      <JFXComboBox fx:id="user" labelFloat="true" layoutX="275.0" layoutY="58.0" prefHeight="48.0" prefWidth="228.0" promptText="Admin/Guest" unFocusColor="#eee0e0" visibleRowCount="2">
+      <JFXComboBox fx:id="type" labelFloat="true" layoutX="275.0" layoutY="58.0" prefHeight="48.0" prefWidth="228.0" promptText="Admin/Guest" unFocusColor="#eee0e0" visibleRowCount="2">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
