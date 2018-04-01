@@ -9,11 +9,10 @@
     <content url="file://$MODULE_DIR$/out" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="jfoenix-8.0.1" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/sqlite-jdbc-3.21.0.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/sqlite-jdbc-3.20.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -22,7 +21,16 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/fontawesomefx-8.9.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/jfoenix-8.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/fontawesomefx-8.9.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

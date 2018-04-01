@@ -7,7 +7,7 @@ public class dbUtil
 {
     private static final String JDBC_DRIVER = "org.sqlite.JDBC";
     private static Connection conn = null;
-    private static final String connStr = "jdbc:sqlite:/home/gaurabdg/Workspace/CS_F213/HotelManagementSystem/InnLogix";
+    private static final String connStr = "jdbc:sqlite:C:\\Users\\HP\\Desktop\\Dattebayo!!\\OOPS PROJECT\\InnLogix\\InnLogix.sqlite";
 
     public static boolean dbConnect() throws SQLException
     {
@@ -41,8 +41,8 @@ public class dbUtil
     }
 
 
-public static void dbDisconnect() throws SQLException
-{
+    public static void dbDisconnect() throws SQLException
+    {
         try
         {
             if (conn != null && !conn.isClosed())
